@@ -10,7 +10,7 @@ class AppDelegate
   attr_accessor :status_item_controller
 
   def applicationDidFinishLaunching(notification)
-    puts "application did finish launching"
+    self.status_item_controller = StatusItemController.alloc.init
   end
 
 end
