@@ -39,8 +39,7 @@ class StatusItemController
   ### Actions
   
   def pref_item_clicked(sender)
-    puts "preferences item clicked"
-    puts sender
+    NSApplication.sharedApplication.delegate.show_preferences
   end
   
   def quit_item_clicked(sender)
