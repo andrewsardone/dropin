@@ -50,6 +50,7 @@
 		8579191A12B520100042A6BC /* status_item_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 8579191912B520100042A6BC /* status_item_controller.rb */; };
 		85791A6712B540490042A6BC /* preferences_controller.rb in Resources */ = {isa = PBXBuildFile; fileRef = 85791A6612B540490042A6BC /* preferences_controller.rb */; };
 		85791D8912B57ABE0042A6BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85791D8712B57ABE0042A6BC /* Localizable.strings */; };
+		85791DD212B57EAC0042A6BC /* NSBundle_ext.rb in Resources */ = {isa = PBXBuildFile; fileRef = 85791DD112B57EAC0042A6BC /* NSBundle_ext.rb */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -83,6 +84,7 @@
 		8579191912B520100042A6BC /* status_item_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.script.ruby; path = status_item_controller.rb; sourceTree = "<group>"; tabWidth = 2; };
 		85791A6612B540490042A6BC /* preferences_controller.rb */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.script.ruby; path = preferences_controller.rb; sourceTree = "<group>"; tabWidth = 2; };
 		85791D8812B57ABE0042A6BC /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		85791DD112B57EAC0042A6BC /* NSBundle_ext.rb */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.script.ruby; path = NSBundle_ext.rb; sourceTree = "<group>"; tabWidth = 2; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* DropIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -181,11 +183,20 @@
 		8579174F12B469990042A6BC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				85791DD012B57E930042A6BC /* Extensions */,
 				8579175712B469E40042A6BC /* app_delegate.rb */,
 				8579191912B520100042A6BC /* status_item_controller.rb */,
 				85791A6612B540490042A6BC /* preferences_controller.rb */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		85791DD012B57E930042A6BC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				85791DD112B57EAC0042A6BC /* NSBundle_ext.rb */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 				8579191A12B520100042A6BC /* status_item_controller.rb in Resources */,
 				85791A6712B540490042A6BC /* preferences_controller.rb in Resources */,
 				85791D8912B57ABE0042A6BC /* Localizable.strings in Resources */,
+				85791DD212B57EAC0042A6BC /* NSBundle_ext.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
