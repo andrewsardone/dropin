@@ -10,10 +10,16 @@ class StatusItemController
   attr_accessor :status_item, :menu
   
   INITIAL_MENU_ITEMS = [
-    NSMenuItem.alloc.initWithTitle("History", action:nil, keyEquivalent:""),
+    NSMenuItem.alloc.initWithTitle(NSBundle.localized_string_for_key("DIMenuItemTitleHistory"), 
+                            action:nil, 
+                     keyEquivalent:""),
     NSMenuItem.separatorItem,
-    NSMenuItem.alloc.initWithTitle("Preferences…", action:"pref_item_clicked:", keyEquivalent:""),
-    NSMenuItem.alloc.initWithTitle("Quit", action:"quit_item_clicked:", keyEquivalent:"")
+    NSMenuItem.alloc.initWithTitle(NSBundle.localized_string_for_key("DIMenuItemTitlePreferences"), 
+                            action:"pref_item_clicked:", 
+                     keyEquivalent:""),
+    NSMenuItem.alloc.initWithTitle(NSBundle.localized_string_for_key("DIMenuItemTitleQuit"), 
+                            action:"quit_item_clicked:", 
+                     keyEquivalent:"")
   ]
   
   ### Object Life Cycle

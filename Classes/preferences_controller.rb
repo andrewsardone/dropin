@@ -17,7 +17,7 @@ class PreferencesController < NSWindowController
                                     styleMask: NSTitledWindowMask | NSClosableWindowMask,
                                       backing: NSBackingStoreBuffered,
                                         defer: false
-    panel.title = "Preferences"
+    panel.title = NSBundle.localized_string_for_key "DIPreferencesTitle"
     PreferencesController.alloc.initWithWindow panel
   end
 
