@@ -3,3 +3,5 @@ DIPreferencesTitle = "Preferences";
 DIMenuItemTitleHistory = "History";
 DIMenuItemTitlePreferences = "Preferences…";
 DIMenuItemTitleQuit = "Quit";
+
+DIPreferencesButtonStartAtLogin = "Start At Login";
