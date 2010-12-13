@@ -1,0 +1,3 @@
+class StatusItemView < NSView
+
+end
