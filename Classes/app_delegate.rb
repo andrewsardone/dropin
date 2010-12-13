@@ -5,6 +5,8 @@
 # Copyright 2010 __MyCompanyName__. All rights reserved.
 
 
+DIPrefKeyStartAtLogin = "DIPrefKeyStartAtLogin"
+
 class AppDelegate
 
   attr_accessor :status_item_controller, :preferences_controller
@@ -13,11 +15,20 @@ class AppDelegate
     self.status_item_controller = StatusItemController.alloc.init
   end
   
-  def show_preferences
-    unless self.preferences_controller
-      self.preferences_controller = PreferencesController.preferences_controller
+  ### Preferences
+  
+  def show_preferences(sender)
+    NSApplication.sharedApplication.activateIgnoringOtherApps(true)
+    self.preferences_controller.showWindow sender
+  end
+  
+  ### Property Overrides
+  
+  def preferences_controller
+    unless @preferences_controller
+      @preferences_controller = PreferencesController.alloc.init
     end
-    self.preferences_controller.showWindow self
+    @preferences_controller
   end
 
 end
