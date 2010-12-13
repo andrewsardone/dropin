@@ -1,11 +1,3 @@
-#
-# rb_main.rb
-# Ralph
-#
-# Created by Andrew Sardone on 12/11/10.
-# Copyright __MyCompanyName__ 2010. All rights reserved.
-#
-
 # Loading the Cocoa framework. If you need to load more frameworks, you can
 # do that here too.
 framework 'Cocoa'

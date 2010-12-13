@@ -1,12 +1,3 @@
-# app_delegate.rb
-# Ralph
-#
-# Created by Andrew Sardone on 12/11/10.
-# Copyright 2010 __MyCompanyName__. All rights reserved.
-
-
-DIPrefKeyStartAtLogin = "DIPrefKeyStartAtLogin"
-
 class AppDelegate
 
   attr_accessor :status_item_controller, :preferences_controller

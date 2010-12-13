@@ -1,10 +1,3 @@
-# preferences_controller.rb
-# Ralph
-#
-# Created by Andrew Sardone on 12/12/10.
-# Copyright 2010 __MyCompanyName__. All rights reserved.
-
-
 PREFS_SIZE = [400, 300]
 
 class PreferencesContentViewController < NSViewController
